@@ -1,3 +1,9 @@
+/**
+   * Create By Dika Ardnt.
+   * Contact Me on wa.me/6288292024190
+   * Follow https://github.com/DikaArdnt
+*/
+
 require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
@@ -1131,11 +1137,6 @@ break
                 for (let i of anu) {
                     await sleep(1500)
                     let btn = [{
-                                urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/Nanatturnip/Botster'
-                                }
-                            }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
                                     phoneNumber: '+62 878-1971-7279'
@@ -1150,14 +1151,10 @@ break
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
-                                }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
-                     
+                      hisoka.send5ButImg(i, txt, hisoka.user.name, global.thumb, btn)
+                    }
                 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
             }
             break
@@ -1169,11 +1166,6 @@ break
 		for (let yoi of anu) {
 		    await sleep(1500)
 		    let btn = [{
-                                urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/Nanatturnip/Botster'
-                                }
-                            }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
                                     phoneNumber: '+62 878-1971-7279'
@@ -1188,11 +1180,6 @@ break
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
-                                }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
@@ -2530,9 +2517,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'list': case 'menu': case 'help': case '?': {
                 anu = `
 
-                👑 Creator : ${global.author}
-                🤖 Bot Name : ${global.packname}
-                
+
+┌──⭓ *Bot Info*
+│👑 Creator : ${global.author}
+│🤖 Bot Name : ${global.packname}
+└───────⭓
 
 ┌──⭓ *Group Menu*
 │
@@ -2594,6 +2583,19 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │
 └───────⭓
 
+┌──⭓ *Random Menu*
+│
+│⭔ ${prefix}coffe
+│⭔ ${prefix}quotesanime
+│⭔ ${prefix}motivasi
+│⭔ ${prefix}puisi
+│⭔ ${prefix}couple
+│⭔ ${prefix}anime
+│⭔ ${prefix}waifu
+│⭔ ${prefix}husbu
+│⭔ ${prefix}neko
+│
+└───────⭓
 
 ┌──⭓ *Text Pro Menu*
 │
@@ -2727,6 +2729,21 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │
 └───────⭓
 
+┌──⭓ *Voice Changer*
+│
+│⭔ ${prefix}bass
+│⭔ ${prefix}blown
+│⭔ ${prefix}deep
+│⭔ ${prefix}earrape
+│⭔ ${prefix}fast
+│⭔ ${prefix}fat
+│⭔ ${prefix}nightcore
+│⭔ ${prefix}reverse
+│⭔ ${prefix}robot
+│⭔ ${prefix}slow
+│⭔ ${prefix}tupai
+│
+└───────⭓
 
 ┌──⭓ *Owner Menu*
 │
@@ -2736,39 +2753,31 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}leave
 │⭔ ${prefix}block @user
 │⭔ ${prefix}unblock @user
+│⭔ ${prefix}bcgroup [text]
+│⭔ ${prefix}bcall [text]
 │⭔ ${prefix}setppbot [image]
 │⭔ ${prefix}setexif
 │
 └───────⭓`
-let btn = [{
-    urlButton: {
-        displayText: 'Source Code',
-        url: 'https://github.com/Nanatturnip/Botster'
-    }
-}, {
-    callButton: {
-        displayText: 'Number Phone Owner',
-        phoneNumber: '+62 878-1971-7279'
-    }
-}, {
-    quickReplyButton: {
-        displayText: 'Status Bot',
-        id: 'ping'
-    }
-}, {
-    quickReplyButton: {
-        displayText: 'Contact Owner',
-        id: 'owner'
-    }  
-}, {
-    quickReplyButton: {
-        displayText: 'Script',
-        id: 'sc'
-    }
-}]
-hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
-}
-break
+                let btn = [{
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: '+62 878-1971-7279'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Status Bot',
+                                    id: 'ping'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }  
+                            }]
+                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
+                     }
+            break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
