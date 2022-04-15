@@ -1,7 +1,7 @@
 {
 	"name": "BotSter",
 	"description": "WhatsApp Bot Using Lib Baileys",
-	"repository": "https://github.com/DikaArdnt/Hisoka-Morou",
-	"logo": "/lib/logo.png",
+	"repository": "https://github.com/Nanatturnip/Botster",
+	"logo": "/lib/hisoka.png",
 	"keywords": ["multi-device"]
 }

@@ -1,8 +1,4 @@
-/**
-   * Create By Dika Ardnt.
-   * Contact Me on wa.me/6288292024190
-   * Follow https://github.com/DikaArdnt
-*/
+
 
 require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
@@ -2539,7 +2535,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 anu = `
 
 👑 Creator : ${global.author}
-🤖 Bot Name :${global.packname}
+🤖 Bot Name : ${global.packname}
 
 ┌──⭓ *Group Menu*
 │
@@ -2687,7 +2683,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}setexif
 │
 └───────⭓`
-		let btn = [{
+                let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
                                     url: 'https://github.com/Nanatturnip/Botster'
@@ -2713,95 +2709,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                     id: 'sc'
                                 }
                             }]
-                
-		
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-                                    
-		
-		
-                                    
-                                
-                          
-
-                                
-
-                    
-
-					
-                           
-
-                                
-
-                          
-
-                                
-
-              
-
-,
-
-                               
-
-              
-
-
-
-
-
-               
-
-
-                               
-]
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
                      }
             break
