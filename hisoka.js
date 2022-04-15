@@ -2687,15 +2687,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}setexif
 │
 └───────⭓`
-                let btn = [{
-                                urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
-                                }
-                            }, {
+                let btn = {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    phoneNumber: '+62 878-1971-7279'
+					
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2707,10 +2703,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                            }
+
                                 }
                             }]
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
