@@ -2687,58 +2687,41 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}setexif
 │
 └───────⭓`
-                let btn = {
+                
+                                    
+		
+		
+                                    
+                                
+                          
 
-                                urlButton: {
+                                
 
-                                    displayText: 'Source Code',
+                    
 
-                                    url: 'https://github.com/Nanatturnip/BotSter'
 					
+                           
 
-                                }
+                                
 
-                            }, {
+                          
 
-                                callButton: {
+                                
 
-                                    displayText: 'Number Phone Owner',
+              
 
-                                    phoneNumber: '+62 878-1971-7279'
+,
 
-                                }
+                               
 
-                            }, {
+              
 
-                                quickReplyButton: {
 
-                                    displayText: 'Status Bot',
 
-                                    id: 'ping'
 
-                                }
 
-                            }, {
+               
 
-                                quickReplyButton: {
-
-                                    displayText: 'Contact Owner',
-
-                                    id: 'owner'
-
-                                }  
-
-                            }, {
-
-                                quickReplyButton: {
-
-                                    displayText: 'Script',
-
-                                    id: 'sc'
-
-                                }
-
-                            }]
 
                                
 ]
