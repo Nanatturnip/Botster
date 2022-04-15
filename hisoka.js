@@ -2539,7 +2539,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 anu = `
 
 👑 Creator : ${global.author}
-🤖 Bot Name : ${global.packname}
+🤖 Bot Name :${global.packname}
 
 ┌──⭓ *Group Menu*
 │
