@@ -1,9 +1,3 @@
-/**
-   * Create By Dika Ardnt.
-   * Contact Me on wa.me/6288292024190
-   * Follow https://github.com/DikaArdnt
-*/
-
 require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
@@ -533,11 +527,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6288292024190 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://www.paypal.me/Cakhaho\n⭔ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://github.com/Nanatturnip/BotSter' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ FREE` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : 6281615075793 (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
+                m.reply('Script : https://github.com/Nanatturnip/BotSter Dont Forget Give Star')
             }
             break
             case 'chat': {
@@ -699,6 +693,22 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: ments})
             }
+
+            break
+            case 'crush': {
+                if (!m.isGroup) throw mess.group
+                let member = participants.map(u => u.id)
+                let me = m.sender
+                let jodoh = member[Math.floor(Math.random() * member.length)]
+                let jawab = `👫Crush mu adalah
+    
+    @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
+                let ments = [me, jodoh]
+                let buttons = [
+                            { buttonId: 'crush', buttonText: { displayText: 'crush' }, type: 1 }
+                        ]
+                        await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: ments})
+                }
             break
             case 'jadian': {
             if (!m.isGroup) throw mess.group
@@ -1137,6 +1147,11 @@ break
                 for (let i of anu) {
                     await sleep(1500)
                     let btn = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: '-'
+                                }
+                            }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
                                     phoneNumber: '+62 878-1971-7279'
@@ -1151,6 +1166,11 @@ break
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Script',
+                                    id: 'sc'
+                                }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
                       hisoka.send5ButImg(i, txt, hisoka.user.name, global.thumb, btn)
@@ -1166,6 +1186,11 @@ break
 		for (let yoi of anu) {
 		    await sleep(1500)
 		    let btn = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: '-'
+                                }
+                            }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
                                     phoneNumber: '+62 878-1971-7279'
@@ -1180,6 +1205,11 @@ break
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Script',
+                                    id: 'sc'
+                                }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
@@ -2516,13 +2546,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'list': case 'menu': case 'help': case '?': {
                 anu = `
-
-
 ┌──⭓ *Bot Info*
 │👑 Creator : ${global.author}
 │🤖 Bot Name : ${global.packname}
 └───────⭓
-
+                
 ┌──⭓ *Group Menu*
 │
 │⭔ ${prefix}linkgroup
@@ -2594,7 +2622,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}waifu
 │⭔ ${prefix}husbu
 │⭔ ${prefix}neko
-│
+│⭔ ${prefix}shinobu
 └───────⭓
 
 ┌──⭓ *Text Pro Menu*
@@ -2673,6 +2701,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │⭔ ${prefix}holoh
 │⭔ ${prefix}jadian
 │⭔ ${prefix}jodohku
+│⭔ ${prefix}crush
 │⭔ ${prefix}delttt
 │⭔ ${prefix}tictactoe
 │⭔ ${prefix}family100
@@ -2729,6 +2758,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │
 └───────⭓
 
+
 ┌──⭓ *Voice Changer*
 │
 │⭔ ${prefix}bass
@@ -2760,6 +2790,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │
 └───────⭓`
                 let btn = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: '-'
+                                }
+                            }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
                                     phoneNumber: '+62 878-1971-7279'
@@ -2774,6 +2809,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Script',
+                                    id: 'sc'
+                                }
                             }]
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
                      }

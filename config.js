@@ -1,20 +1,19 @@
-
 const fs = require('fs')
 const chalk = require('chalk')
 
 // Website Api
 global.APIs = {
-	zenz: 'https://zenzapi.xyz',
+	zenz: 'https://zenzapis.xyz',
 }
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapi.xyz': 'Your Key',
+	'https://zenzapis.xyz': '23558B81BF',
 }
 
 // Other
-global.owner = ['6287819717279']
-global.premium = ['6287819717279']
+global.owner = ['6287819717279','6288277560706','628127834737']
+global.premium = ['6287819717279,6288277560706']
 global.packname = 'BotSter'
 global.author = 'bernardcode.id'
 global.sessionName = 'hisoka'
